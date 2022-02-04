@@ -4,7 +4,7 @@ const initialState={
     token:""
 }
 
-export type ActionToken={type:"ADD_TOKEN",token:string}
+export type ActionToken={type:"ADD_TOKEN",token:string|string}
 
 export const tokenReducer=(state:TokenInterface=initialState,action:ActionToken)=>{
     switch(action.type){
