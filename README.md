@@ -32,7 +32,7 @@ npm run test
 * Website: https://www.rugaba-rene.com/
 * Twitter: [@JeanRugaba](https://twitter.com/JeanRugaba)
 * Github: [@ReneRugaba](https://github.com/ReneRugaba)
-* LinkedIn: [@rene jean rugaba](https://linkedin.com/in/rene jean rugaba)
+* LinkedIn: [@rene jean rugaba](https://www.linkedin.com/in/ren%C3%A9-jean-rugaba-66686a195)
 
 ## Show your support
 
