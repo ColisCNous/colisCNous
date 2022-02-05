@@ -1,4 +1,4 @@
-export interface PrivateTouteInterface {
+export interface PrivateRouteInterface {
     component: React.FC
     token: string,
     role: string

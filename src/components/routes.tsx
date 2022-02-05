@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Navigate, RouteProps } from 'react-router-dom';
-import { PrivateTouteInterface } from '../interfaces/privateRouteInterface';
+import { PrivateRouteInterface } from '../interfaces/privateRouteInterface';
 
 
 
 
-const PrivateRoute = ({ component: Component, token, role,path,roles}: PrivateTouteInterface) =>
+const PrivateRoute = ({ component: Component, token, role,path,roles}: PrivateRouteInterface) =>
 (
 
   token && token !== "" && role && role !== "" && roles.includes(role) ? (
