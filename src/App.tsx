@@ -1,11 +1,10 @@
 import React from 'react';
+import NotFound from './components/notFoundPage.tsx/notFound';
 import './sass/App.scss';
 
 function App() {
   return (
-    <div className="App">
-     <h1 className='text-center'>Colis c'est nous!</h1>
-    </div>
+    <NotFound/>
   );
 }
 
