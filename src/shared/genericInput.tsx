@@ -41,7 +41,7 @@ export const InputGeneric = ({ name, type, label, textColor, fontWeigth, bgInput
  * @param InputGenInterface 
  * @returns {JSX.element}
  */
-export const TextAreaGeneric = ({ name, type, label, textColor, fontWeigth, bgInput, wigthInput, ...rest }: InputGenInterface) => {
+export const TextAreaGeneric = ({ name, type, label, textColor, fontWeigth, bgInput, wigthInput, rows, ...rest }: InputGenInterface) => {
     return (
         <div>
             <Field placeholder={label}
@@ -52,6 +52,7 @@ export const TextAreaGeneric = ({ name, type, label, textColor, fontWeigth, bgIn
                 focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400`}
                 name={name}
                 as="textarea"
+                rows={rows?rows:"10"}
                 {...rest} />
 
             <div className="font-bold text-red-500 px-5 py-2">

@@ -1,7 +1,10 @@
 import React from 'react';
+import SubscribeForm from './form/subscribeForm';
 
 function Subscribe() {
-  return <div>Subscribe</div>;
+  return <>
+    <SubscribeForm/>
+  </>;
 }
 
 export default Subscribe;
