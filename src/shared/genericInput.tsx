@@ -1,5 +1,6 @@
 import { ErrorMessage, Field } from "formik"
 import { InputGenInterface } from "../interfaces/inputGenInterface"
+import {useState} from 'react'
 
 
 
@@ -69,12 +70,13 @@ export const TextAreaGeneric = ({ name, type, label, textColor, fontWeigth, bgIn
  */
 export const DatePickerGeneric = ({ name, type, label, textColor, fontWeigth, bgInput, wigthInput,handleChange, ...rest }: InputGenInterface) => {
 
-   
+   const [date,setDate]= useState((new Date().getDate()))
 
     return (
-        <div className="rainbow-m-around_small" style={{ maxWidth: 200, }}>
+        <div>
             <input
                 type="date"
+                value={date}
                 className={`${textColor ? textColor : 'text-black'} ${fontWeigth ? fontWeigth : 'font-bold'}
                 ${bgInput ? bgInput : 'placeholder-gray-600'} ${wigthInput && wigthInput} px-4 py-2.5 mt-2 text-base 
                 transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200 
