@@ -1,7 +1,7 @@
 import { Formik, Form } from 'formik';
 import React from 'react';
 import './sass/App.scss';
-import { InputGeneric, TextAreaGeneric } from './shared/genericInput';
+import { DatePickerGeneric, InputGeneric, TextAreaGeneric } from './shared/genericInput';
 import * as Yup from 'yup';
 
 function App() {
@@ -16,13 +16,15 @@ function App() {
         initialValues={{
           testeField: "",
           email:"",
-          decription:""
+          decription:"",
+          date:""
         }}
         onSubmit={value => console.log(value)}
         validationSchema={validationSchema}
       >
         {({handleChange,handleBlur})=>(
         <Form>
+          <DatePickerGeneric name="date" label='teste' handleChange={handleChange}/>
           <InputGeneric type="text" name="testeField" label="testField" />
           <InputGeneric type="text" name="email" label="email" />
           <TextAreaGeneric name="decription" label="decription"/>

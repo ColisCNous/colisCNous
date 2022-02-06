@@ -9,4 +9,8 @@ export interface InputGenInterface {
     fontWeigth?:string
     bgInput?:string
     wigthInput?:string
+    handleChange?: {
+        (e: React.ChangeEvent<any>): void;
+        <T = string | React.ChangeEvent<any>>(field: T): T extends React.ChangeEvent<any> ? void : (e: string | React.ChangeEvent<any>) => void;
+    }
 }
