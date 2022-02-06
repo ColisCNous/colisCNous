@@ -1,7 +1,7 @@
 import React from 'react';
 
-function mainRoute() {
+function MainRoute() {
   return <div></div>;
 }
 
-export default mainRoute;
+export default MainRoute;
