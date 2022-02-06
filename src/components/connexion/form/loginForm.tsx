@@ -1,8 +1,8 @@
 
 import React from 'react';
 
-function loginForm() {
-  return <div></div>;
+function LoginForm() {
+  return <div>LoginForm</div>;
 }
 
-export default loginForm;
+export default LoginForm;
