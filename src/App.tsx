@@ -28,7 +28,7 @@ function App() {
           <DatePickerGeneric name="date" label='teste' handleChange={handleChange}/>
           <InputGeneric type="text" name="testeField" label="testField" />
           <InputGeneric type="text" name="email" label="email" />
-          <TextAreaGeneric name="decription" label="decription"/>
+          <TextAreaGeneric name="description" label="description"/>
           <ButtonGeneric/>
         </Form>
          )}
