@@ -17,7 +17,7 @@ function App() {
         initialValues={{
           testeField: "",
           email:"",
-          decription:"",
+          description:"",
           date:""
         }}
         onSubmit={value => console.log(value)}
