@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .headerContainer{
+        @apply min-h-full mb-14;
+    }
+
+    .navContainer {
+        @apply fixed 
+        bg-neutral-700 
+        shadow-md  
+        shadow-black 
+        w-full py-2 flex 
+        justify-between;
+    }
+
+    .logoDiv{
+        @apply text-white 
+        ml-5 font-bold 
+        text-amber-600;
+    }
+
+    .ulNav{
+        @apply flex text-white mr-5;
+    }
+
+    .liNav{
+        @apply  relative 
+        flex items-center 
+        justify-center 
+        mx-auto mr-4 ml-4 
+        mx-auto 
+        bg-gray-600 
+        py-1 px-3 
+        text-green-400
+        hover:text-white
+        hover:bg-amber-600
+        rounded-3xl hover:rounded-lg
+        transition-all duration-300 ease-linear
+        shadow-md
+        hover:shadow-lg;
+    }
+
+    
+}
+
+.logoDiv{
+    font-family: 'Bungee Shade', cursive;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
