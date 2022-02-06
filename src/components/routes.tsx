@@ -1,10 +1,11 @@
 import React from 'react';
-import { Routes, Route, Navigate, RouteProps } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { PrivateRouteInterface } from '../interfaces/privateRouteInterface';
 
 import Home from '../components/home/home'
 import Connexion from './connexion/connexion';
 import Subscribe from './subscribe/subscribe';
+import NotFound from './notFoundPage/notFound';
 
 
 const PrivateRoute = ({ component: Component, token, role,path,roles}: PrivateRouteInterface) =>
@@ -25,6 +26,7 @@ const RoutesApp = () => {
       <Route path="/" element={<Home />} />
       <Route path="/connexion" element={<Connexion />} />
       <Route path="/subscribe" element={<Subscribe />} />
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
   )
 }

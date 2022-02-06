@@ -8,11 +8,9 @@ import './sass/App.scss';
 
 function App() {
 
- 
+
   return (
-    <div>
-      <MainRoute />
-    </div>
+    <MainRoute />
   );
 }
 

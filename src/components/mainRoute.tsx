@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import Footer from './footer/footer';
 import NavBar from './navBar/navBar';
 import RoutesApp from './routes';
@@ -8,7 +8,9 @@ function MainRoute() {
   return (<div>
     <BrowserRouter>
       <NavBar />
-      <RoutesApp />
+      <div className='h-screen'>
+        <RoutesApp />
+      </div>
       <Footer />
     </BrowserRouter>
   </div>);
