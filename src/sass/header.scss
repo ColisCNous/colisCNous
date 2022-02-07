@@ -8,16 +8,17 @@
     }
 
     .navContainer {
-        @apply fixed 
+        @apply 
         bg-neutral-700 
         shadow-md  
         shadow-black 
         w-full py-2 flex 
-        justify-between;
+        justify-between
+        z-10;
     }
 
     .logoDiv{
-        @apply text-white 
+        @apply
         ml-5 font-bold 
         text-amber-600;
     }
@@ -30,8 +31,7 @@
         @apply  relative 
         flex items-center 
         justify-center 
-        mx-auto mr-4 ml-4 
-        mx-auto 
+        mx-auto mr-4 ml-4  
         bg-gray-600 
         py-1 px-3 
         text-green-400
@@ -52,4 +52,9 @@
 }
 
 
+
+.navContainer{
+    position:fixed;
+    top:0%;
+}
 

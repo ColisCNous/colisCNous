@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <header className='headerContainer'>
             <nav className='navContainer'>
-                <div className='logoDiv'>
+                <div className='logoDiv text-3xl'>
                     ColisCNous
                 </div>
 

@@ -12,11 +12,11 @@ function SubscribeForm() {
         FirstName: Yup.string().min(3).required(),
         LastName:Yup.string().min(3).required(),
         Email: Yup.string().email().required(),
-        Password1:Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/).required(),
-        Password2:Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/).required(),
+        Password1:Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,"Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character!").required(),
+        Password2:Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,"Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character!").required(),
         Description:Yup.string().min(3).required()
     })
-    
+
     return (<div className='containerFormSub'>
         <div className='containerCard'>
             <div className='cardForm'>
