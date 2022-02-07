@@ -1,7 +1,7 @@
 import React from 'react';
 import './../../../sass/formSubscribe.scss';
 import { Form, Formik } from 'formik'
-import { InputGeneric, TextAreaGeneric } from '../../../shared/genericInput';
+import { InputGeneric, SelectGeneric, TextAreaGeneric } from '../../../shared/genericInput';
 import { ButtonGeneric } from '../../../shared/buttonGeneric';
 import * as Yup from 'yup';
 
@@ -16,6 +16,12 @@ function SubscribeForm() {
         Password2:Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,"Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character!").required(),
         Description:Yup.string().min(3).required()
     })
+
+    const arrayOption = [
+        {value:"French"},
+        {value:"English"},
+        {value:"Spanish"}
+    ]
 
     return (<div className='containerFormSub'>
         <div className='containerCard'>
@@ -33,12 +39,13 @@ function SubscribeForm() {
                             Email: "",
                             Password1: "",
                             Password2: "",
-                            Description:""
+                            Description:"",
+                            Languages:""
                         }}
                         onSubmit={value => console.log(value)}
                         validationSchema={schema}
                     >
-                        {({ }) => (
+                        {({handleChange}) => (
                             <Form className='formSub'>
                                 <div className='containerInputs'>
                                     <div className="containerInput">
@@ -61,6 +68,9 @@ function SubscribeForm() {
                                 </div>
                                 <div className="mb-4">
                                     <TextAreaGeneric name="Description" label='Description' wigthInput='w-full'/>
+                                </div>
+                                <div className="mb-4 mt-25">
+                                    <SelectGeneric handlechange={handleChange} wigthInput={'w-full'}  name="Languages" label="Languages" optionsValues={arrayOption} />
                                 </div>
                                 <div className="mb-4 mt-25">
                                     <ButtonGeneric hoverBgButton="hover:bg-green-600" wigthButton='w-full' />

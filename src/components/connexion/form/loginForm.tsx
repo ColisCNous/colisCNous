@@ -27,7 +27,7 @@ function LoginForm() {
             onSubmit={value => console.log(value)}
             validationSchema={schema}
           >
-            {( { } ) => (
+            {( {handleChange} ) => (
               <Form className='formSub'>
                   <div className="loginInputs">
                   <InputGeneric name='Email' type='email' label='Email' wigthInput='w-full' />

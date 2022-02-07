@@ -34,3 +34,5 @@ export const ButtonGeneric = ({typeButton,bgColor,hoverBgButton,
         </div>
     )
 }
+
+

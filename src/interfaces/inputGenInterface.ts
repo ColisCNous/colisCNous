@@ -1,6 +1,8 @@
 import { string } from "yup";
 
 
+type optionValues ={value:string}
+
 export interface InputGenInterface {
     name:string
     type?:string
@@ -10,7 +12,8 @@ export interface InputGenInterface {
     bgInput?:string
     wigthInput?:string
     rows?:string
-    handleChange?: {
+    optionsValues?:optionValues[]
+    handlechange?: {
         (e: React.ChangeEvent<any>): void;
         <T = string | React.ChangeEvent<any>>(field: T): T extends React.ChangeEvent<any> ? void : (e: string | React.ChangeEvent<any>) => void;
     }
