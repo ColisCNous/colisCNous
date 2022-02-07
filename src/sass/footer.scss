@@ -4,37 +4,41 @@
 
 @layer components{
   .footerContainer {
-    @apply min-h-full
+    @apply 
+    min-h-full
     bg-neutral-700 
     shadow-md  
     shadow-black 
-    w-full py-2 flex
   }
   
   .navFooterContainer {
     @apply
+    w-full py-2
     flex
-    justify-between
+    justify-center
   }
 
   .ulNav{
     @apply
-    text-white mr-5
-    justify-between
+    text-white 
+    flex
   }
 
-  .liNav {
+  .liNavFooter {
     @apply
     relative 
     flex items-center 
     justify-center 
-    mx-auto mr-4 ml-4 
+    mx-auto mr-4 ml-4
+    py-1 px-3
+    hover:text-amber-600
   }
 
-  // .credit {
-  //   @apply
-  // }
-
+  .credit {
+    @apply
+    text-center
+    text-white 
+  }
 }
 
 
