@@ -1,11 +1,11 @@
 import React from 'react';
 import LoginForm from './form/loginForm';
-
+import * as Yup from 'yup';
 function Connexion() {
+  
   return (<div>
-      Connexion : 
       <LoginForm />
-      </div>);
+    </div>);
 }
 
 export default Connexion;
