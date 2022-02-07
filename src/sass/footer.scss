@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .footerContainer {
+    @apply min-h-full
+    bg-neutral-700 
+    shadow-md  
+    shadow-black 
+    w-full py-2 flex
+  }
+  
+  .navFooterContainer {
+    @apply
+    flex
+    justify-between
+  }
+
+  .ulNav{
+    @apply
+    text-white mr-5
+    justify-between
+  }
+
+  .liNav {
+    @apply
+    relative 
+    flex items-center 
+    justify-center 
+    mx-auto mr-4 ml-4 
+  }
+
+  // .credit {
+  //   @apply
+  // }
+
+}
+
+
