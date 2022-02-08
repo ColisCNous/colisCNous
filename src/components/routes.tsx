@@ -8,25 +8,25 @@ import Subscribe from './subscribe/subscribe';
 import NotFound from './notFoundPage/notFound';
 
 
-const PrivateRoute = ({ component: Component, token, role,path,roles}: PrivateRouteInterface) =>
-(
+// const PrivateRoute = ({ component: Component, token, role,path,roles}: PrivateRouteInterface) =>
+// (
 
-  token && token !== "" && role && role !== "" && roles.includes(role) ? (
-    <Route path={path} element={<Component />}/>
-  ) : (
-    <Route path="*" element={<Navigate to={{ pathname: '/login' }} />} />
+//   token && token !== "" && role && role !== "" && roles.includes(role) ? (
+//     <Route path={path} element={<Component />}/>
+//   ) : (
+//     <Route path="*" element={<Navigate to={{ pathname: '/login' }} />} />
 
-  )
+//   )
   
-)
+// )
 
 const RoutesApp = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/connexion" element={<Connexion />} />
-      <Route path="/subscribe" element={<Subscribe />} />
-      <Route path='*' element={<NotFound/>}/>
+      <Route path="/colisCNous" element={<Home />} />
+      <Route path="/colisCNous/connexion" element={<Connexion />} />
+      <Route path="/colisCNous/subscribe" element={<Subscribe />} />
+      <Route path='/colisCNous/*' element={<NotFound/>}/>
     </Routes>
   )
 }
