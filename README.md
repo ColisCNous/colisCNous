@@ -25,6 +25,14 @@ node > 10
 npm run test
 ```
 
+## Url brief
+
+* Depoyement on github pages: [@ColisCNous](https://coliscnous.github.io/colisCNous/)
+* Design : [@Design](https://github.com/ColisCNous/colisCNous/blob/main/doc/design.md)
+* Methodology: [@Methodology](https://github.com/ColisCNous/colisCNous/blob/main/doc/methodology.md)
+* Technos: [@Technos](https://github.com/ColisCNous/colisCNous/blob/main/doc/methodology.md)
+* Tools : [@Tools](https://github.com/ColisCNous/colisCNous/blob/main/doc/methodology.md)
+
 ## Author
 
 👤 **RJ**

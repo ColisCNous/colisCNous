@@ -6,6 +6,7 @@ import Home from '../components/home/home'
 import Connexion from './connexion/connexion';
 import Subscribe from './subscribe/subscribe';
 import NotFound from './notFoundPage/notFound';
+import Cgv from './cgv/cgv';
 
 
 // const PrivateRoute = ({ component: Component, token, role,path,roles}: PrivateRouteInterface) =>
@@ -26,6 +27,7 @@ const RoutesApp = () => {
       <Route path="/colisCNous" element={<Home />} />
       <Route path="/colisCNous/connexion" element={<Connexion />} />
       <Route path="/colisCNous/subscribe" element={<Subscribe />} />
+      <Route path='/colisCNous/cgv' element={<Cgv/>}/>
       <Route path='/colisCNous/*' element={<NotFound/>}/>
     </Routes>
   )

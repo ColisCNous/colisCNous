@@ -5,7 +5,7 @@ import NavBar from './navBar/navBar';
 import RoutesApp from './routes';
 
 function MainRoute() {
-  return (<div>
+  return (<div >
     <BrowserRouter>
       <NavBar />
       <div className='h-screen'>
