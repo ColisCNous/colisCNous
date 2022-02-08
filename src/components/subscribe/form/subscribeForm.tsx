@@ -50,10 +50,10 @@ function SubscribeForm() {
                             <Form className='formSub'>
                                 <div className='containerInputs'>
                                     <div className="containerInput">
-                                        <InputGeneric name="FirstName" type='text' label='First name' />
+                                        <InputGeneric wigthInput='md:w-full w-full' name="FirstName" type='text' label='First name' />
                                     </div>
-                                    <div className='md:ml-2'>
-                                        <InputGeneric name="LastName" type='text' label='Last name' />
+                                    <div className=''>
+                                        <InputGeneric wigthInput='md:w-full w-full' name="LastName" type='text' label='Last name' />
                                     </div>
                                 </div>
                                 <div className="mb-4">
@@ -61,10 +61,10 @@ function SubscribeForm() {
                                 </div>
                                 <div className='containerInputs2'>
                                     <div className="containerInput">
-                                        <InputGeneric name="Password1" type='password' label='Password' />
+                                        <InputGeneric wigthInput='md:w-full w-full' name="Password1" type='password' label='Password' />
                                     </div>
-                                    <div className='md:ml-2'>
-                                        <InputGeneric name="Password2" type='password' label='Corfirm password' />
+                                    <div>
+                                        <InputGeneric wigthInput='md:w-full w-full' name="Password2" type='password' label='Corfirm password' />
                                     </div>
                                 </div>
                                 <div className="mb-4">
