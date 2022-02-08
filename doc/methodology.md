@@ -20,3 +20,7 @@ Github is a tool that allowed us to work together, organize our code and have a 
 ```
 Jira allowed us to organize the red file project, to extract the different epics and user stories from it. This allows us to have a roadmap on which to refer to carry out our work.
 ```
+
+![alt text](img/boards.png)
+![alt text](img/roadmap.png)
+![alt text](img/backlog.png)
