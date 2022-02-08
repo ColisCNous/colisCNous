@@ -2,44 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
+@layer components {
   .footerContainer {
-    @apply 
-    min-h-full
+    @apply min-h-full
     bg-neutral-700 
     shadow-md  
     shadow-black
-    mt-32
-  }
-  
-  .navFooterContainer {
-    @apply
-    w-full py-2
-    flex
-    justify-center
+    mt-32;
   }
 
-  .ulNav{
-    @apply
-    text-white 
+  .navFooterContainer {
+    @apply w-full py-2
     flex
+    justify-center;
+  }
+
+  .ulNav {
+    @apply text-white 
+    flex;
   }
 
   .liNavFooter {
-    @apply
-    relative 
+    @apply relative 
     flex items-center 
     justify-center 
     mx-auto mr-4 ml-4
     py-1 px-3
-    hover:text-amber-600
+    hover:text-amber-600;
   }
 
   .credit {
-    @apply
-    text-center
-    text-white 
+    @apply text-center
+    text-white;
   }
 }
-
-
