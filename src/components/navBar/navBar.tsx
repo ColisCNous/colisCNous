@@ -11,9 +11,9 @@ function NavBar() {
                 </div>
 
                 <ul className='ulNav'>
-                    <li className='liNav'><Link to="/" ><span><i className="fas fa-home"></i> </span> </Link></li>
-                    <li className='liNav'><Link to="/subscribe"><span><i className="fas fa-address-card"></i></span> </Link></li>
-                    <li className='liNav'><Link to="/connexion"><span><i className="fas fa-user"></i> </span></Link></li>
+                    <li className='liNav'><Link to="/colisCNous/" ><span><i className="fas fa-home"></i> </span> </Link></li>
+                    <li className='liNav'><Link to="/colisCNous/subscribe"><span><i className="fas fa-address-card"></i></span> </Link></li>
+                    <li className='liNav'><Link to="/colisCNous/connexion"><span><i className="fas fa-user"></i> </span></Link></li>
                 </ul>
             </nav>
         </header>
