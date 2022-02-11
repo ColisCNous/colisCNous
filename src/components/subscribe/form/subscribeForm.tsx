@@ -67,9 +67,7 @@ function SubscribeForm() {
                                         <InputGeneric wigthInput='md:w-full w-full' name="Password2" type='password' label='Corfirm password' />
                                     </div>
                                 </div>
-                                <div className="mb-4">
-                                    <TextAreaGeneric name="Description" label='Description' wigthInput='w-full'/>
-                                </div>
+                                
                                 <div className="mb-4 mt-25">
                                     <SelectGeneric handlechange={handleChange} wigthInput={'w-full'}  name="Languages" label="Languages" optionsValues={arrayOption} />
                                 </div>
