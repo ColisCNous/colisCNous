@@ -6,9 +6,9 @@ function Footer() {
   return <footer className='footerContainer'>
     <nav className="navFooterContainer">
       <ul className='ulNav'>
-        <li className='liNavFooter'><Link to="/colisCNous/cgv">Mentions</Link></li>
-        <li className='liNavFooter'><Link to="/colisCNous/confidencial">confidential</Link></li>
-        <li className='liNavFooter'><Link to="/colisCNous/road-map">Road Map</Link></li>
+        <li className='liNavFooter'><Link to="/cgv">Mentions</Link></li>
+        <li className='liNavFooter'><Link to="/confidencial">confidential</Link></li>
+        <li className='liNavFooter'><Link to="/road-map">Road Map</Link></li>
       </ul>
     </nav>
     <p className="credit">© By RJ and Hamid</p>

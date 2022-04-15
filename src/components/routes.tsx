@@ -24,11 +24,11 @@ import Cgv from './cgv/cgv';
 const RoutesApp = () => {
   return (
     <Routes>
-      <Route path="/colisCNous" element={<Home />} />
-      <Route path="/colisCNous/connexion" element={<Connexion />} />
-      <Route path="/colisCNous/subscribe" element={<Subscribe />} />
-      <Route path='/colisCNous/cgv' element={<Cgv/>}/>
-      <Route path='/colisCNous/*' element={<NotFound/>}/>
+      <Route path="/" element={<Home />} />
+      <Route path="/connexion" element={<Connexion />} />
+      <Route path="/subscribe" element={<Subscribe />} />
+      <Route path='/cgv' element={<Cgv/>}/>
+      <Route path='/*' element={<NotFound/>}/>
     </Routes>
   )
 }

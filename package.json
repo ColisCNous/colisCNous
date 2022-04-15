@@ -2,7 +2,6 @@
   "name": "coliscnous-front",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ColisCNous.github.io/colisCNous",
   "dependencies": {
     "@material-ui/pickers": "^3.3.10",
     "@testing-library/jest-dom": "^5.16.1",
