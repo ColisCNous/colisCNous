@@ -3,16 +3,12 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../reducers/rootReducer';
 
 export const useAxiosCenter=()=>{
-    const {tokenReducer}=useSelector((state:RootState)=>state)
+    // const {tokenReducer}=useSelector((state:RootState)=>state)
 
-    const tok:string=tokenReducer.token
+    // const tok:string=tokenReducer.token
 
     const getAdress =async ()=>{
-        return await axios.get("",{
-            headers:{
-                Authorization: "Bearer " + tok,
-            }
-        })
+        return await axios.get("/api/")
     }
 
 

@@ -1,9 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-$test:red;
 
-h1{
-    color: $test;
-    font-size: 5rem;
-}

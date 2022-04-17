@@ -5,7 +5,6 @@ import { PrivateRouteInterface } from '../interfaces/privateRouteInterface';
 import Home from '../components/home/home'
 import Connexion from './connexion/connexion';
 import Subscribe from './subscribe/subscribe';
-import NotFound from './notFoundPage/notFound';
 import Cgv from './cgv/cgv';
 
 
@@ -28,7 +27,6 @@ const RoutesApp = () => {
       <Route path="/connexion" element={<Connexion />} />
       <Route path="/subscribe" element={<Subscribe />} />
       <Route path='/cgv' element={<Cgv/>}/>
-      <Route path='/*' element={<NotFound/>}/>
     </Routes>
   )
 }

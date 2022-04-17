@@ -1,5 +1,5 @@
 import React from 'react';
-import './../../../sass/formSubscribe.scss';
+import './../../../css/formSubscribe.css';
 import { Form, Formik } from 'formik'
 import { InputGeneric, SelectGeneric, TextAreaGeneric } from '../../../shared/genericInput';
 import { ButtonGeneric } from '../../../shared/buttonGeneric';

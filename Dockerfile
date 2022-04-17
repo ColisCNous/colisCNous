@@ -1,22 +1,23 @@
-FROM node:16-alpine as build
+FROM node:16-alpine as builder
 
 
-WORKDIR /usr/app
+WORKDIR /app
 
 
-COPY package.json .
+COPY ./package.json .
 
-COPY package-lock.json .
 
-RUN npm install
+RUN npm cache clean --force
+RUN npm i
+RUN npm rebuild node-sass --force
+
 
 COPY . .
 
 RUN npm run build
 
+FROM nginx
+EXPOSE 3000
 
-FROM nginx:stable-alpine
-COPY --from=build /usr/app/build /usr/share/nginx/html/
-
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/build /usr/share/nginx/html
