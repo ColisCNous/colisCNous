@@ -8,7 +8,7 @@ export const useAxiosCenter=()=>{
     // const tok:string=tokenReducer.token
 
     const getAdress =async ()=>{
-        return await axios.get("/api/v1/customers")
+        return await axios.get("http://localhost:8080/v1/customers")
     }
 
 
